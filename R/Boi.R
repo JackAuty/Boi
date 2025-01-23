@@ -2,6 +2,14 @@
 ##' @import ggplot2
 ##' @import grid
 
+.onAttach <- function(libname, pkgname) {
+  packageStartupMessage("Welcome to the Boi package! CHUR BOI!")
+  if(!require(gglot2)) install.packages("ggplot2")
+  if(!require(grid)) install.packages("grid")
+  library(ggplot2)
+  library(grid)
+}
+
 Boi_hist <- function(df, column){
   if(is.data.frame(df)){
     print("dataframe provided")
