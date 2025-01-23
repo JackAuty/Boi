@@ -1,5 +1,6 @@
-#' @import ggplot2
-#' @import grid
+##' \code{\link[ggplot2]{ggplot}}
+##' @import ggplot2
+##' @import grid
 
 Boi_hist <- function(df, column){
   if(is.data.frame(df)){
