@@ -1,4 +1,4 @@
-P_hist <- function(df, column){
+Boi_hist <- function(df, column){
   if(is.data.frame(df)){
     print("dataframe provided")
     df<-as.data.frame(df[,column])
