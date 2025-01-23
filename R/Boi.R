@@ -1,9 +1,11 @@
-.onAttach <- function(libname, pkgname) {
-  packageStartupMessage("Welcome to the Boi package! CHUR BOI!")
-  if(!require(gglot2)) install.packages("ggplot2")
-  if(!require(grid)) install.packages("grid")
-  library(ggplot2)
-  library(grid)
+.onLoad <- function(libname, pkgname) {
+  required_packages <- c("ggplot2", "grid")
+  
+  for (pkg in required_packages) {
+    if (!requireNamespace(pkg, quietly = TRUE)) {
+      install.packages(pkg)
+    }
+  }
 }
 
 Boi_hist <- function(df, column){
