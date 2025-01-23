@@ -1,7 +1,3 @@
-##' \code{\link[ggplot2]{ggplot}}
-##' @import ggplot2
-##' @import grid
-
 .onAttach <- function(libname, pkgname) {
   packageStartupMessage("Welcome to the Boi package! CHUR BOI!")
   if(!require(gglot2)) install.packages("ggplot2")
