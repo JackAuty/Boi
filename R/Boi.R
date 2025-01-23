@@ -1,3 +1,6 @@
+#' @import ggplot2
+#' @import grid
+
 Boi_hist <- function(df, column){
   if(is.data.frame(df)){
     print("dataframe provided")
