@@ -8,3 +8,6 @@ Description: This package contains a function called Boi_hist() which creates a 
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
+Imports:
+    ggplot2,
+    grid
