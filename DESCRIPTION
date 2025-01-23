@@ -1,9 +1,10 @@
 Package: Boi
 Type: Package
-Title: Jacks functions
-Version: 1.0
-Date: 2025-01-23
-Author: Who wrote it
-Maintainer: Who to complain to jack.auty@utas.edu.au
-Description: More about what it does (maybe more than one line).
-License: What license is it under?
+Title: Histogram of P Values
+Version: 0.1.0
+Author: Jack Auty [aut, cre]
+Maintainer: Jack Auty <jack.auty@utas.edu.au>
+Description: This package contains a function called Boi_hist() which creates a histogram of P values.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
